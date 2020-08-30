@@ -13,7 +13,7 @@ rSCX        EQU $FF43 ; scroll x
 ; LY address indicates which scanline the LCD is currently drawing
 ;   0-143: current scanline number
 ; 144-153: VBlank period
-rLY         EQU $FF44 
+rLY         EQU $FF44
 
 ; Background palette
 ; Divided into four parts of 2 bits each: %33 22 11 00
@@ -46,14 +46,14 @@ Start:
     jr c, .waitVBlank ; if less than 144 keep checking
 
     xor a ; ld a, 0
-    ld [rLCDC], a
+    ld [rLCDC], a ; turn off LCD
 
     ld hl, $9000
     ld de, FontTiles
     ld bc, FontTilesEnd - FontTiles
 .copyFont
     ld a, [de]
-    ld [hli], a
+    ld [hli], a ; ld [hl], a ; inc hl
     inc de
     dec bc
     ld a, b
@@ -94,4 +94,4 @@ FontTilesEnd:
 SECTION "HelloWorld string", rom0
 
 HelloWorldStr:
-    db "Hello World!", 0
+    db "It works!", 0
