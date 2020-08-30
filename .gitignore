@@ -1,0 +1,4 @@
+# compilation files
+*.gb
+*.o
+*.sn1
