@@ -1,0 +1,1 @@
+![Input with scroll](input.gif)
