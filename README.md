@@ -1,10 +1,10 @@
 | Hello World | Horizontal Scroll | Inputs |
 | --- | --- | --- |
-| ![Hello World](01_HelloWorld/hello-world.png) | ![Scroll X](05_ScrollX/scrollx.gif) | ![Key Inputs](06_Input/input.gif) |
+| ![Hello World](04_PrintText/hello-world.png) | ![Scroll X](05_ScrollX/scrollx.gif) | ![Key Inputs](06_Input/input.gif) |
 
 ### Roadmap
 
-- [ ] 1. Turn on Screen [_Code_] [_Readme_]
+- [ ] 1. Turn on Screen [~~_Code_~~] [_Readme_]
 - [ ] 2. Show an image on screen [_Code_] [_Readme_]
 - [ ] 3. Macros [_Code_] [_Readme_]
 - [ ] 4. Print text [~~Code~~] [_Readme_]
