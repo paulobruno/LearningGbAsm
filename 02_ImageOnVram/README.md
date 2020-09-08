@@ -29,5 +29,5 @@ After that, we get:
 It worked! (well, kind of ...)
 
 The sprite **is** in VRAM, but the screen is now empty.  
-What happened is that when we turned off the screen and turned on again, the game boy moved the Nintendo logo to another address.  
+What happened is that when we turned off the screen and turned on again, the game boy loaded the sprites from another address.  
 For now, let's keep it this way. We'll handle it later, when printing a sprite on the screen.
