@@ -16,18 +16,24 @@ SECTION "Main", ROM0
 Start:
 
 .waitVBlank 
+    ; $FF44 is the address of LY register
+    ; it holds the current column being drawn
     ld a, [$FF44]
+    ; compare with 144, the num of pixels on screen
+    ; 0-143 = drawing/notVBlanking
+    ; 144-153 = not drawing/vblaking
     cp 144
+    ; while < 144, keep running
     jp c, .waitVBlank
     
     ; turn off lcd
     xor a
-    ld [$FF40], a
+    ld [$FF40], a ; $FF40 is the location of LCDC register
 
     ; $8800 is one of the VRAM addresses
     ld hl, $8800
 
-    ; copy to VRAM
+    ; copy sprite to VRAM
 
     ld [hl], $FF
     inc hl
@@ -66,7 +72,7 @@ Start:
 
     ; turn on lcd
     ld a, %10010001
-    ld [$FF40], a
+    ld [$FF40], a ; $FF40 is the location of LCDC register
 
 .lock
     jr .lock
