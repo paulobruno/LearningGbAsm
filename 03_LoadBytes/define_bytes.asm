@@ -1,11 +1,9 @@
 SECTION "Entry", ROM0[$100]
-
     nop
     jp Start
 
 
 SECTION "Header", ROM0
-
     REPT $150 - $104
         db 0
     ENDR
@@ -46,7 +44,7 @@ Start:
     jr nz, .copyToVram
 
     ; turn on lcd
-    ld a, %10000001
+    ld a, %10010001
     ld [$FF40], a
 
 .lock
@@ -56,9 +54,9 @@ Start:
 ; we define the sprite between two labels
 ; the first one gives us the start address
 ; the second one gives us the end address 
-BlackSpriteStart
+BlackSpriteStart:
     db $FF, $FF, $FF, $FF
     db $FF, $FF, $FF, $FF
     db $FF, $FF, $FF, $FF
     db $FF, $FF, $FF, $FF
-BlackSpriteEnd
+BlackSpriteEnd:
