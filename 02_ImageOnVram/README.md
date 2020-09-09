@@ -1,11 +1,11 @@
 ### Manual loading
 
+_**WARNING:** don't reproduce this code in a real hardware, it can break your GameBoy._
+
 We want to load a full black sprite on VRAM.  
 Instead, what we get is this:
 
-| | |
-| --- | --- |
-| ![No VBlank VRAM](novblank_vram.png) | ![No VBlank screen](novblank_screen.png) |
+![No VBlank VRAM](novblank_vram.png)
 
 This is because we are not turning off the screen.
 It's somewhat curious that we get something, because we shouldn't be able to write to VRAM with the screen turned on.
@@ -22,12 +22,8 @@ We go through four steps:
 
 After that, we get:
 
-| | |
-| --- | --- |
-| ![VBlank VRAM](vblank_vram.png) | ![VBlank screen](vblank_screen.png) |
+![VBlank VRAM](vblank_vram.png)
 
-It worked! (well, kind of ...)
+It worked!
 
-The sprite **is** in VRAM, but the screen is now empty.  
-What happened is that when we turned off the screen and turned on again, the game boy loaded the sprites from another address.  
-For now, let's keep it this way. We'll handle it later, when printing a sprite on the screen.
+For now, let's keep the screen empty, we'll show a sprite in it later.

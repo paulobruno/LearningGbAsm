@@ -65,7 +65,7 @@ Start:
     ld [hl], $FF
 
     ; turn on lcd
-    ld a, %10000001
+    ld a, %10010001
     ld [$FF40], a
 
 .lock
