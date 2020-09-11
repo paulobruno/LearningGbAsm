@@ -53,7 +53,6 @@ Start:
 
 ; we can also use the INCBIN instruction to load the bytes from file
 ; the file should contain only the sprite bytes
-; it doesn't matter, but usually sprites have the '.2bpp' extension
 BlackSpriteStart:
-    INCBIN "black_sprite.2bpp"
+    INCBIN "black_sprite.bin"
 BlackSpriteEnd:

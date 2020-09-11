@@ -56,5 +56,5 @@ Start:
 
 
 SmileSpriteStart:
-    INCBIN "smile.2bpp"
+    INCBIN "smile.bin"
 SmileSpriteEnd:
