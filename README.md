@@ -1,6 +1,6 @@
 | Hello World | Horizontal Scroll | Inputs |
 | --- | --- | --- |
-| ![Hello World](06_PrintText/hello-world.png) | ![Scroll X](05_ScrollX/scrollx.gif) | ![Key Inputs](06_Input/input.gif) |
+| ![Hello World](06_PrintText/images/ascii_screen.png) | ![Scroll X](05_ScrollX/scrollx.gif) | ![Key Inputs](06_Input/input.gif) |
 
 ### Roadmap
 
@@ -9,7 +9,7 @@
 - [x] 3. Load bytes using functions [~~_Code_~~] [~~_Readme_~~]
 - [x] 4. Image on screen [~~_Code_~~] [~~_Readme_~~]
 - [x] 5. Constants [~~_Code_~~] [~~_Readme_~~]
-- [ ] 6. Print text [~~Code~~] [_Readme_]
+- [x] 6. Print text [~~Code~~] [~~_Readme_~~]
 - [ ] 7. Clear the screen [_Code_] [_Readme_]
 - [ ] 8. Functions [_Code_] [_Readme_]
 - [ ] 9. Scrolling [~~Code~~] [_Readme_]
