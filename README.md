@@ -1,3 +1,5 @@
+*__Disclaimer__: these codes are more a trajectory of my learning process and not a set of tutorials for beginners. If you want to know how to create your own GB games, the best advice I have for you is to look this really [awesome GB-dev resources](https://github.com/gbdev/awesome-gbdev).*
+
 | Hello World | Horizontal Scroll | Inputs |
 | --- | --- | --- |
 | ![Hello World](06_PrintText/images/ascii_screen.png) | ![Scroll X](05_ScrollX/scrollx.gif) | ![Key Inputs](06_Input/input.gif) |
