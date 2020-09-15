@@ -3,12 +3,9 @@ SECTION "Entry", ROM0[$100]
     nop
     jp Start
 
-
-SECTION "Header", ROM0
-
-    REPT $150 - $104
-        db 0
-    ENDR
+REPT $150 - $104
+    db 0
+ENDR
 
 
 SECTION "Main", ROM0
