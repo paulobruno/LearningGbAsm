@@ -24,7 +24,7 @@ Start:
     ; 144-153 = not drawing/vblaking
     cp 144
     ; while < 144, keep running
-    jp c, .waitVBlank
+    jr c, .waitVBlank
     
     ; turn off lcd
     xor a

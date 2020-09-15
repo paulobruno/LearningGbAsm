@@ -16,7 +16,7 @@ Start:
 .waitVBlank 
     ld a, [$FF44]
     cp 144
-    jp c, .waitVBlank
+    jr c, .waitVBlank
     
     ; turn off lcd
     xor a
