@@ -1,4 +1,4 @@
-*__Disclaimer__: these codes are more a trajectory of my learning process and not a set of tutorials for beginners. If you want to know how to create your own GB games, the best advice I have for you is to look this really [awesome GB-dev resources](https://github.com/gbdev/awesome-gbdev).*
+*__Disclaimer__: this repository is a record of my learning process and not a set of tutorials for beginners. If you want to learn how to create your own GB games, the best advice I have for you is to take a look at this really [awesome GB-dev resources](https://github.com/gbdev/awesome-gbdev).*
 
 | Hello World | Horizontal Scroll | Inputs |
 | --- | --- | --- |
@@ -11,10 +11,10 @@
 - [x] 3. Load bytes using functions [~~_Code_~~] [~~_Readme_~~]
 - [x] 4. Image on screen [~~_Code_~~] [~~_Readme_~~]
 - [x] 5. Constants [~~_Code_~~] [~~_Readme_~~]
-- [x] 6. Print text [~~Code~~] [~~_Readme_~~]
+- [x] 6. Print text [~~_Code_~~] [~~_Readme_~~]
 - [ ] 7. Clear the screen [~~_Code_~~] [_Readme_]
-- [ ] 8. Functions [_Code_] [_Readme_]
-- [ ] 9. Scrolling [~~Code~~] [_Readme_]
+- [ ] 8. Functions [~~_Code_~~] [_Readme_]
+- [ ] 9. Scrolling [~~_Code_~~] [_Readme_]
 - [ ] 10. Basic inputs with scroll [~~_Code_~~] [_Readme_]
 - [ ] 11. Sprite on screen [_Code_] [_Readme_]
 - [ ] 12. Animation [_Code_] [_Readme_]
