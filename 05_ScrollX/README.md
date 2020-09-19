@@ -1,1 +1,0 @@
-![Horizontal Scroll](scrollx.gif)
