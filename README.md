@@ -2,7 +2,7 @@
 
 | Hello World | Horizontal Scroll | Inputs |
 | --- | --- | --- |
-| ![Hello World](06_PrintText/images/ascii_screen.png) | ![Scroll X](05_ScrollX/scrollx.gif) | ![Key Inputs](06_Input/input.gif) |
+| ![Hello World](06_PrintText/images/ascii_screen.png) | ![Background Scroll](09_BackgroundScroll/bg_scroll.gif) | ![Key Inputs](06_Input/input.gif) |
 
 ### Roadmap
 
