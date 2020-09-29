@@ -22,7 +22,7 @@
 - [ ] 10. Basic inputs (scrolling bg) [~~_Code_~~] [_Readme_]
 - [ ] 11. Sprite on screen [~~_Code_~~] [_Readme_]
 - [ ] 12. Inputs (moving sprites) [~~_Code_~~] [_Readme_]
-- [ ] 13. Animation [_Code_] [_Readme_]
+- [ ] 13. Animation [~~_Code_~~] [_Readme_]
 - [ ] 14. Tilemaps [_Code_] [_Readme_]
 - [ ] 15. Code optimization [_Code_] [_Readme_]
 - [ ] 16. Create a menu [_Code_] [_Readme_]
