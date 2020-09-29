@@ -1,8 +1,12 @@
 *__Disclaimer__: this repository is a record of my learning process and not a set of tutorials for beginners. If you want to learn how to create your own GB games, the best advice I have for you is to take a look at this really [awesome GB-dev resources](https://github.com/gbdev/awesome-gbdev).*
 
-| Hello World | Background Scroll | Inputs |
-| --- | --- | --- |
-| ![Hello World](06_PrintText/images/ascii_screen.png) | ![Background Scroll](09_BackgroundScroll/bg_scroll.gif) | ![Key Inputs](10_BasicInputs/input_screen.gif) |
+| 01 Turn On | 04 Image on screen | 06 Print text |
+| :---: | :---: | :---: |
+| ![Turn on](01_TurnOn/turn_on.png) | ![Image on screen](04_ImageOnScreen/images/palette_1_screen.png) | ![Hello World](06_PrintText/images/ascii_screen.png) |
+
+| 09 Background Scroll | 12 Inputs | 13 Animation |
+| :---: | :---: | :---: |
+| ![Background Scroll](09_BackgroundScroll/bg_scroll.gif) | ![Move Sprites](12_Inputs/input_screen.gif) | ![Animation](13_Animation/coin_screen.gif)
 
 ### Roadmap
 
