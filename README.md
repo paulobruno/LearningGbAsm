@@ -17,7 +17,7 @@
 - [x] 5. Constants [~~_Code_~~] [~~_Readme_~~]
 - [x] 6. Print text [~~_Code_~~] [~~_Readme_~~]
 - [x] 7. Clear the screen [~~_Code_~~] [~~_Readme_~~]
-- [ ] 8. Functions [~~_Code_~~] [_Readme_]
+- [x] 8. Functions [~~_Code_~~] [~~_Readme_~~]
 - [ ] 9. Scrolling [~~_Code_~~] [_Readme_]
 - [ ] 10. Basic inputs (scrolling bg) [~~_Code_~~] [_Readme_]
 - [ ] 11. Sprite on screen [~~_Code_~~] [_Readme_]
