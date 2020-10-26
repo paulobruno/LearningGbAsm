@@ -32,7 +32,7 @@ To correctly print the colors, we should set a new BGP.
 
 ### Setting a palette
 
-The address `$FF47` holds the BGP register. We set it to `%11100100` to our desired palette:
+The address `$FF47` holds the BGP register. We set it to `%11100100` to get our desired palette:
 
 ![Palette 1](images/palette_1.png)
 
@@ -42,7 +42,7 @@ Then, we get the intended results:
 | --- | --- |
 | ![Palette 1 VRAM](images/palette_1_vram.png) | ![Palette 1 screen](images/palette_1_screen.png) |
 
-Now, we could just play with the palettes and see the result we get.
+Now, we could just play with the palettes and see the results we get.
 
 
 ### Setting a different palette
