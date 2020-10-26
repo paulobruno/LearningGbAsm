@@ -26,4 +26,4 @@ After that, we get:
 
 It worked!
 
-For now, let's keep the screen empty, we'll show a sprite in it later.
+For now, let's keep the screen empty, we'll show a sprite on it later.
