@@ -1,6 +1,10 @@
-# compilation files
+# Compilation files
 *.gb
 *.o
 *.sn1
 *.map
 *.sym
+
+# Temp files
+[Tt]emp*
+[Tt]est*
