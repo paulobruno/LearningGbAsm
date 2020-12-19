@@ -1,10 +1,18 @@
+# Commit file
+[Nn]otes.txt
+[Cc]ommit[Mm]essage*
+[Cc]ommit[Mm]sg*
+[Cc]ommit[-_][Mm]essage*
+[Cc]ommit[-_][Mm]sg*
+
+# Temp files
+*~
+[Tt]emp*
+[Tt]est*
+
 # Compilation files
 *.gb
 *.o
 *.sn1
 *.map
 *.sym
-
-# Temp files
-[Tt]emp*
-[Tt]est*
