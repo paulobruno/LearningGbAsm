@@ -71,31 +71,27 @@ Start:
     call clearOam
 
     ld a, $48
-    ld [$FE00], a
+    ld [$FE00], a ; $FE00 = sprite X position
     ld a, $54
-    ld [$FE01], a
+    ld [$FE01], a ; $FE01 = sprite X position
     ld a, $30
-    ld [$FE02], a
+    ld [$FE02], a ; $FE02 = sprite index (tile number)
     ld a, $00
-    ld [$FE03], a
+    ld [$FE03], a ; $FE00 = attribute flags byte
 
     call turnOnLcd
 
 .mainLoop
     call waitVBlank
-    call handleInput
 
-    ; update index
+    ; update sprite index
+    ; note that the index range is ($30..$35)
     ld a, [$FE02]
-    sub $30
     inc a
-    cp 6
-    jr nz, .dontResetSpriteIndex
-    xor a
-.dontResetSpriteIndex
-    ld b, a
-    ld a, $30
-    add b
+    cp $36
+    jr nz, .updateSpriteIndex ; if still in the range, continue
+    ld a, $30 ; else, i.e. is past the last index, restart
+.updateSpriteIndex
     ld [$FE02], a
 
     ld bc, $5FFF
@@ -235,7 +231,7 @@ handleInput:
     call nz, incScrollY
     
     ret
-
+    
 clearOam:
     ld hl, OAMRAM
 .clear
