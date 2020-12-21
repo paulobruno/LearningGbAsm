@@ -13,20 +13,10 @@ rINP        EQU $FF00
 
 rLCDC       EQU $FF40
 
-; Scroll coords
-; Top-left corner relative to the tilemap
-rSCY        EQU $FF42 ; scroll y
-rSCX        EQU $FF43 ; scroll x
-
 rLY         EQU $FF44
 rBGP        EQU $FF47
 rOBP0       EQU $FF48
 rOBP1       EQU $FF49
-
-; variable to hold the current scroll values
-; $C000 is the first address of Work RAM
-scxValue    EQU $C000
-scyValue    EQU $C001
 
 
 SECTION "Entry", ROM0[$100]
@@ -45,19 +35,10 @@ Start:
     call turnOffLcd
     call setDefaultPalette
     
-    ; initialize scroll variable
-    xor a
-    ld [scxValue], a
-    ld [scyValue], a
-
-    ; reset the scrolls
-    ld [rSCX], a
-    ld [rSCY], a
-    
     ; copy sprite to VRAM
     ld hl, $8800
-    ld de, BlackTileStart
-    ld bc, BlackTileEnd - BlackTileStart
+    ld de, BgTileStart
+    ld bc, BgTileEnd - BgTileStart
     call copyToVram
 
     ld hl, $8300
@@ -110,12 +91,12 @@ SpriteStart:
     INCBIN "coin.bin"
 SpriteEnd:
 
-BlackTileStart:
+BgTileStart:
     db $00, $00, $00, $00
     db $00, $00, $00, $00
     db $00, $00, $00, $00
     db $00, $00, $00, $00
-BlackTileEnd:
+BgTileEnd:
 
 
 SECTION "Functions", ROM0
