@@ -27,3 +27,11 @@
 - [ ] 15. Code optimization [_Code_] [_Readme_]
 - [ ] 16. Create a menu [_Code_] [_Readme_]
 - [ ] 17. Audio [_Code_] [_Readme_]
+
+## Projects
+
+### Conway's Game of Life
+
+This is my first project using GB ASM concepts. You can find the code [here](https://github.com/paulobruno/GbAsmConwaysGameOfLife).
+
+![Conway's Game of Life](https://github.com/paulobruno/GbAsmConwaysGameOfLife/blob/main/results_gifs/gol_vram_pulsar15.gif)
