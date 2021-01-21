@@ -37,10 +37,9 @@ Start:
     
     call turnOnLcd
 
-.scrollX
+.loop
     call waitVBlank
     ld bc, $00FF
-    ;ld bc, $0AFF
 .delay
     ld a, b
     or c
@@ -48,7 +47,7 @@ Start:
     jr nz, .delay
 
     call incScrollX
-    jr .scrollX
+    jr .loop
 
 
 SECTION "Functions", ROM0
