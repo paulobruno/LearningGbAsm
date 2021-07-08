@@ -1,10 +1,14 @@
-This is the first code with animation. 
+Finally, we'll start to work with animation. The first one will be simple, we're gonna just change the scroll value of the background.
+
+### BG Scrolling
+
 On the previous codes, I just had to copy the desired sprites to memory and start an infinite loop.
 
 Unlike them, now I had to make something inside the main loop.
-In this case, I increased the background X position after a small delay, which is enough to create a scrolling animation.
+In this case, I increased the background horizontal position (X pos) after a small delay, which is enough to create a scrolling animation.
 
-# TODO
-Background scroll is saved on address lalala and when it goes through the limit of the screen, it warps to the other side.
+Background scroll is saved on addresses `$FF42` (scroll Y) and `$FF43` (scroll X). When it exceeds the limit of the screen, it warps to the other side. Thus, we just need to increment the value of `$FF43` indefinitely.
 
 ![Background Scroll](bg_scroll.gif)
+
+*Note that incrementing the background scroll value moves it to the right. Since we are "moving" the background, the resulting effect is that the sprites appears to move to the left side.*
