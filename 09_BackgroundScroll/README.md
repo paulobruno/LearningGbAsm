@@ -11,4 +11,6 @@ Background scroll is saved on addresses `$FF42` (scroll Y) and `$FF43` (scroll X
 
 ![Background Scroll](bg_scroll.gif)
 
-*Note that incrementing the background scroll value moves it to the right. Since we are "moving" the background, the resulting effect is that the sprites appears to move to the left side.*
+*Note that incrementing the background scroll value moves it to the right. Since we are "moving" the background to the right, the resulting effect is that the sprites appears to move to the left side, as we can see in the VRAM image below.*
+
+![Scrolling VRAM](bg_scroll_vram.gif)
