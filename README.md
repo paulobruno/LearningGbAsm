@@ -24,9 +24,8 @@
 - [ ] 12. [Inputs (moving sprites)](12_Inputs) [~~_Code_~~] [_Readme_]
 - [ ] 13. [Animation](13_Animation) [~~_Code_~~] [_Readme_]
 - [ ] 14. [Tilemaps](14_Tilemap) [~~_Code_~~] [_Readme_]
-- [ ] 15. Code optimization [_Code_] [_Readme_]
-- [ ] 16. Create a menu [_Code_] [_Readme_]
-- [ ] 17. Audio [_Code_] [_Readme_]
+- [x] 15. [Interrupts](15_Interrupts) [~~_Code_~~] [~~_Readme_~~]
+- [ ] 16. Audio [_Code_] [_Readme_]
 
 ## Projects
 
